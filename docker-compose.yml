@@ -5,4 +5,4 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./data:/usr/share/nginx/html
+      - ./wemos/data:/usr/share/nginx/html
