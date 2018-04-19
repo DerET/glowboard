@@ -1,0 +1,215 @@
+<html>
+<head>
+  <title>Longboard</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="slick.css">
+  <link rel="stylesheet" type="text/css" href="board.css">
+  
+  <script defer src="jquery.js"></script>
+  <script defer src="slick.js"></script>
+  <script defer src="board.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="mode">
+    <h1>Modus</h1>
+    <div class="form-group">
+      <select class="form-control mode">
+        <option value="127" data-speed="false" data-colors="">Aus</option>
+        <option value="0" data-speed="false" data-colors="Farbe">Statisch</option>
+        <option value="8" data-speed="false" data-colors="Links,Rechts">Seiten</option>
+        <option value="1" data-speed="false" data-colors="Vorderräder,Hinterräder">Verlauf</option>
+        <option value="2" data-speed="false" data-colors="vorn links,vorn rechts,hinten links,hinten rechts">Räder</option>
+        <option value="3" data-speed="true" data-colors="Farbe">Puls</option>
+        <option value="4" data-speed="true" data-colors="Farbe">Punkt</option>
+        <option value="7" data-speed="true" data-colors="Farbe">Ring</option>
+        <option value="5" data-speed="true" data-colors="Farbe">Welle</option>
+        <option value="6" data-speed="true" data-colors="">Regenbogen</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="speed">
+    <h1>Geschwindigkeit</h1>
+    <div class="form-group">
+      <input type="range" min="1" max="10" step="1" class="form-control speed">
+      <input type="text" class="form-control text" disabled>
+    </div>
+  </div>
+  
+  <div class="color">
+    <h1></h1>
+    <div class="slider" data-id="0">
+      <div class="bg" style="background-color: #ff0000" data-color="16711680">
+        <span class="text">rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff5500" data-color="16718592">
+        <span class="text">orange-rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff8f00" data-color="16733440">
+        <span class="text">orange</span>
+      </div>
+      <div class="bg" style="background-color: #ffff00" data-color="16754688">
+        <span class="text">gelb</span>
+      </div>
+      <div class="bg" style="background-color: #bfff00" data-color="11075328">
+        <span class="text">limette</span>
+      </div>
+      <div class="bg" style="background-color: #30ff30" data-color="65280">
+        <span class="text">grün</span>
+      </div>
+      <div class="bg" style="background-color: #7fffd4" data-color="65320">
+        <span class="text">aquamarin</span>
+      </div>
+      <div class="bg" style="background-color: #62c5da" data-color="65472">
+        <span class="text">cyan</span>
+      </div>
+      <div class="bg" style="background-color: #3162ff" data-color="13567">
+        <span class="text">blau</span>
+      </div>
+      <div class="bg" style="background-color: #a146ff" data-color="8061183">
+        <span class="text">violett</span>
+      </div>
+      <div class="bg" style="background-color: #ff00ff" data-color="16711872">
+        <span class="text">magenta</span>
+      </div>
+      <div class="bg" style="background-color: #ff006f" data-color="16711700">
+        <span class="text">rose</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="color">
+    <h1></h1>
+    <div class="slider" data-id="1">
+      <div class="bg" style="background-color: #ff0000" data-color="16711680">
+        <span class="text">rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff5500" data-color="16718592">
+        <span class="text">orange-rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff8f00" data-color="16733440">
+        <span class="text">orange</span>
+      </div>
+      <div class="bg" style="background-color: #ffff00" data-color="16754688">
+        <span class="text">gelb</span>
+      </div>
+      <div class="bg" style="background-color: #bfff00" data-color="11075328">
+        <span class="text">limette</span>
+      </div>
+      <div class="bg" style="background-color: #30ff30" data-color="65280">
+        <span class="text">grün</span>
+      </div>
+      <div class="bg" style="background-color: #7fffd4" data-color="65320">
+        <span class="text">aquamarin</span>
+      </div>
+      <div class="bg" style="background-color: #62c5da" data-color="65472">
+        <span class="text">cyan</span>
+      </div>
+      <div class="bg" style="background-color: #3162ff" data-color="13567">
+        <span class="text">blau</span>
+      </div>
+      <div class="bg" style="background-color: #a146ff" data-color="8061183">
+        <span class="text">violett</span>
+      </div>
+      <div class="bg" style="background-color: #ff00ff" data-color="16711872">
+        <span class="text">magenta</span>
+      </div>
+      <div class="bg" style="background-color: #ff006f" data-color="16711700">
+        <span class="text">rose</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="color">
+    <h1></h1>
+    <div class="slider" data-id="2">
+      <div class="bg" style="background-color: #ff0000" data-color="16711680">
+        <span class="text">rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff5500" data-color="16718592">
+        <span class="text">orange-rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff8f00" data-color="16733440">
+        <span class="text">orange</span>
+      </div>
+      <div class="bg" style="background-color: #ffff00" data-color="16754688">
+        <span class="text">gelb</span>
+      </div>
+      <div class="bg" style="background-color: #bfff00" data-color="11075328">
+        <span class="text">limette</span>
+      </div>
+      <div class="bg" style="background-color: #30ff30" data-color="65280">
+        <span class="text">grün</span>
+      </div>
+      <div class="bg" style="background-color: #7fffd4" data-color="65320">
+        <span class="text">aquamarin</span>
+      </div>
+      <div class="bg" style="background-color: #62c5da" data-color="65472">
+        <span class="text">cyan</span>
+      </div>
+      <div class="bg" style="background-color: #3162ff" data-color="13567">
+        <span class="text">blau</span>
+      </div>
+      <div class="bg" style="background-color: #a146ff" data-color="8061183">
+        <span class="text">violett</span>
+      </div>
+      <div class="bg" style="background-color: #ff00ff" data-color="16711872">
+        <span class="text">magenta</span>
+      </div>
+      <div class="bg" style="background-color: #ff006f" data-color="16711700">
+        <span class="text">rose</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="color">
+    <h1></h1>
+    <div class="slider" data-id="3">
+      <div class="bg" style="background-color: #ff0000" data-color="16711680">
+        <span class="text">rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff5500" data-color="16718592">
+        <span class="text">orange-rot</span>
+      </div>
+      <div class="bg" style="background-color: #ff8f00" data-color="16733440">
+        <span class="text">orange</span>
+      </div>
+      <div class="bg" style="background-color: #ffff00" data-color="16754688">
+        <span class="text">gelb</span>
+      </div>
+      <div class="bg" style="background-color: #bfff00" data-color="11075328">
+        <span class="text">limette</span>
+      </div>
+      <div class="bg" style="background-color: #30ff30" data-color="65280">
+        <span class="text">grün</span>
+      </div>
+      <div class="bg" style="background-color: #7fffd4" data-color="65320">
+        <span class="text">aquamarin</span>
+      </div>
+      <div class="bg" style="background-color: #62c5da" data-color="65472">
+        <span class="text">cyan</span>
+      </div>
+      <div class="bg" style="background-color: #3162ff" data-color="13567">
+        <span class="text">blau</span>
+      </div>
+      <div class="bg" style="background-color: #a146ff" data-color="8061183">
+        <span class="text">violett</span>
+      </div>
+      <div class="bg" style="background-color: #ff00ff" data-color="16711872">
+        <span class="text">magenta</span>
+      </div>
+      <div class="bg" style="background-color: #ff006f" data-color="16711700">
+        <span class="text">rose</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
