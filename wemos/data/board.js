@@ -101,7 +101,6 @@ const updateColor = function(slick, current) {
 
   window.clearTimeout(updateColorJobs[id]);
   updateColorJobs[id] = window.setTimeout(() => {
-
     $.getJSON("/set?color" + id + "=" + bg, response => {
       console.log(response);
       lastResponse.color[id] = bg;
